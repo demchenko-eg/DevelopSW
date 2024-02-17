@@ -1,10 +1,10 @@
 from math import factorial as f
 
-def is_prime(number):
-    if number < 2:
+def is_prime(n):
+    if n < 2:
         return False
-    for i in range(2, int(number**0.5) + 1):
-        if number % i == 0:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
             return False
     return True
 
